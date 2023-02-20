@@ -31,7 +31,6 @@
     <div class="user-tools">
       <div class="nav-cart">
         <p id="cart-count">3</p>
-        <!-- <img src="./images/icon-cart.svg" alt="Cart" class="cart-icon"> -->
         <object class="cart-icon" data="./images/icon-cart.svg" type="image/svg+xml" aria-label="open/close cart"></object>
       </div>
       <img src="./images/image-avatar.png" alt="My Avatar" class="avatar">
@@ -53,7 +52,9 @@
           <div class="back-btn"><img src="./images/icon-previous.svg" alt="previous image"></div>
           <div class="next-btn"><img src="./images/icon-next.svg" alt="next image"></div>
         </div>
-        <img src="./images/image-product-1.jpg" alt="product image" class="rounded" id="preview-img" data-product="0">
+        <div class="preview-img-container">
+          <img src="./images/image-product-1.jpg" alt="product image" class="rounded" id="preview-img" data-product="0">
+        </div>
       </div>
       <ul class="preview-nav">
         <li class="thumbnail active" data-product="0"><img src="./images/image-product-1-thumbnail.jpg"/></li>
@@ -86,7 +87,6 @@
 
   <dialog id="lightbox">
     <div class="close-modal">
-      <!-- <img src="./images/icon-close.svg" alt="close modal" id="close-icon"> -->
       <object id="close-icon" data="./images/icon-close.svg" type="image/svg+xml" aria-label="close lightbox"></object>
     </div>
     <section class="previews">

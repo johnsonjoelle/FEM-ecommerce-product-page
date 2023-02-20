@@ -113,6 +113,9 @@ $(window).on("load", function(){
       $(navCartIcon).css('fill', '#69707D');
     }
   );
+  if (window.matchMedia("(max-width: 799px)").matches) {
+    $(navCartIcon).css('fill', 'hsl(220, 13%, 13%)');
+  }
   const btnCart = document.getElementById('btn-cart').contentDocument;
   const btnCartIcon = btnCart.getElementById('cart-svg');
   $(btnCartIcon).css('fill', '#fff');

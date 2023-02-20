@@ -408,10 +408,16 @@ dialog::backdrop {
     padding: 0;
   }
   .previews {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .product-page .preview-main {
     cursor: default;
+  }
+  .preview-img-container {
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
   }
   .product-page .img-btns {
     display: flex;
@@ -422,6 +428,20 @@ dialog::backdrop {
   .details {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .company-name {
+    font-size: 14px;
+  }
+  .product-title {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .product-desc {
+    font-size: 15px;
+  }
+  .price-container {
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
   }
   #preview-img.rounded {
     border-radius: 0;
