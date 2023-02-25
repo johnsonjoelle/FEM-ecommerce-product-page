@@ -58,6 +58,7 @@ function addToCart(itemName, count, price) {
   if(cart.length!=null && cart.length>0) {
     count += parseInt($('.cart-item-count').text());
     total = price * count;
+    cart[0].count = count;
     $('.cart-item-count').text(count);
     $('.cart-item-total').text(`$${total.toFixed(2)}`);
   } else {
